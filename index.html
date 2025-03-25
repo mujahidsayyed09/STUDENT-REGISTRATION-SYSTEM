@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <script defer src="index.js"></script> 
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-800">
+    <div class="w-full sm:w-3/4 md:w-2/3 lg:w-1/2 xl:w-1/3 bg-white p-6 rounded-lg shadow-lg">
+        <!-- Title -->
+        <header class="text-2xl font-bold text-center mb-2">STUDENT REGISTRATION FORM</header>
+
+        <!-- Description -->
+        <p class="text-center text-gray-600 mb-4">
+            Please fill in the details correctly to register as a student.
+        </p>
+
+        <!-- Form -->
+        <form id="studentForm">
+            <label for="name" class="block font-medium mb-1">Student Name:</label>
+            <input type="text" id="name" name="Name" placeholder="Enter Name" class="w-full px-3 py-2 border rounded mb-3" required>
+
+            <label for="studentId" class="block font-medium mb-1">Student ID:</label>
+            <input type="number" id="studentId" name="StudentID" min="1000" max="9999" placeholder="4-Digit ID" class="w-full px-3 py-2 border rounded mb-3" required>
+
+            <label for="classs" class="block font-medium mb-1">Class:</label>
+            <input type="number" id="classs" name="class" min="1" max="12" placeholder="Class" class="w-full px-3 py-2 border rounded mb-3" required>
+
+            <label for="email" class="block font-medium mb-1">Email:</label>
+            <input type="email" id="email" name="Email" placeholder="Enter Email" class="w-full px-3 py-2 border rounded mb-3" required>
+
+            <label for="contact" class="block font-medium mb-1">Contact:</label>
+            <input type="tel" id="contact" name="Contact" pattern="[0-9]{10}" placeholder="10-digit Number" class="w-full px-3 py-2 border rounded mb-3" required>
+
+            <input type="submit" id="submitBtn" value="SUBMIT" class="w-full bg-gray-800 text-white py-2 rounded hover:bg-gray-950">
+        </form>
+        <!--Link to view registered students-->
+        <a href="students.html" class="block text-center mt-4 text-gray-950 underline">View Registered Students</a>
+    </div>
+</body>
